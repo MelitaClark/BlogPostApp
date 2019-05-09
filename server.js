@@ -1,9 +1,10 @@
 const express = require('express');
-const router = express.Router();
+
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
-const {ShoppingList, Recipes} = require('./models');
+const blogPostsRouter = require("./blogPostsRouter.js");
+const {BlogPosts} = require('./models');
 
 const jsonParser = bodyParser.json();
 const app = express();
@@ -12,11 +13,6 @@ const app = express();
 // log the http layer
 app.use(morgan('common'));
 
-app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
-});
 
 
 
