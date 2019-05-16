@@ -1,0 +1,9 @@
+6. .travis.yml:language: node_js
+7. node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: Eu241f2MSWry+00IjVL7wfojKZO1Qcag8B2Wxw/goNe1UQ+EoIRsA/IkM6DRfiWyBYNW/j+WSp1x3qyjFao0aiX53LGdSRQzNAGNm9z2drIwi12eXyURgNy9lkQHMVyZBB5h5E4dZgVMLUkotBmVTmDtJng4JjyavAZ6L1djl8mZcztXdd2xCMk7aR0xY0N25FyTwi4hCRoiYh7VRfAlD7Aih4L2TBJPkMVeMGo+hOcvng/Z05ysr+rWSkECe01IF/KTF0V37sfgD6mU3W7vf71dkqxz4q8lbaDKNcTQCYrHAgxxX7vQU17Fn3cqG4/eiZuRCjzc7IYUsiry/cUo+r7pJTxUt1mh7C3TpyJTzQKutN45PC+zkhlNvk4IqPQDZ2mvnvZ0iiYX6A5LLDmiYC9fFRWGR7RKgzqPYxD10F/1Fgnctxy+TNxESuhXAKLXixGUnUpXtNgGYjd5svcPygM4YLMTNIePkD5LREQ/NQNRXIoAJrAYx2rs5PdnaScmM/JX0mEsWuH8BMRqQ1ATIQ1Ys00qSQuLxFFuU6uHmFx9gDp8Zs6ITgT/pL2ZCWMr+49RrFFuCV2bWeS2OUazRpju8fy9zclbOW2/VOWvyfbzwAi1Vqx4shOwl+OLlo5whhKSUZDxKOFimb1t2JOe7iTMUX4EJXuF4QtBCiKLdNg=
+  app: BlogPostApp
+  on:
+    repo: MelitaClark/BlogPostApp
