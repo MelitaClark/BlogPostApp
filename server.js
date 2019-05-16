@@ -1,5 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
+app.use(express.static('public'));
 
 const blogPostsRouter = require("./blogPostsRouter");
 const app = express();
